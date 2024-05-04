@@ -1,0 +1,56 @@
+
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .produits-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .produits-table th,
+  .produits-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .produits-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .produits-table img {
+    display: block;
+    margin: auto;
+  }
+  
+  .btn-icon {
+    margin-right: 5px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+
+
+.delete-btn:hover,
+.edit-link:hover,
+.view-link:hover {
+  color: red;
+}

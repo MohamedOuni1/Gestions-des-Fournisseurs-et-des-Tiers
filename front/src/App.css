@@ -1,0 +1,76 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  font-weight: bold; /* Mettre en gras */
+  text-decoration: none; /* Supprimer le souligné */
+}
+.NavTitle1 {
+  margin: 0;
+  font-weight: bold; /* Mettre en gras */
+  text-decoration: none; /* Supprimer le souligné */
+  color: #fff; /* Couleur blanche */
+}
+
+
+
+.NavTitle {
+  margin: 0;
+}
+
+.NavList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.NavItem {
+  margin-right: 10px;
+}
+
+.NavLink {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.NavLink.active {
+  background-color: #0056b3;
+}
+
+.routes-container {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Nav {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Aligner les éléments à l'extrémité opposée */
+  align-items: center; /* Centrer verticalement les éléments */
+}
+
+.NavLeft {
+  display: flex; /* Utiliser flexbox pour aligner les éléments horizontalement */
+}
+
+.NavRight {
+  display: flex; /* Utiliser flexbox pour aligner les éléments horizontalement */
+}
+
+.NavRight .NavItem button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.NavRight .NavItem button:hover {
+  background-color: #dc3545; /* Couleur rouge */
+}

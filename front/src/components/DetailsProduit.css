@@ -1,0 +1,29 @@
+.details-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.details-label {
+    color:#0056b3 ;
+}
+.details-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details-content {
+    font-size: 18px;
+}
+
+.details-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.loading {
+    font-style: italic;
+    color: #999;
+}
