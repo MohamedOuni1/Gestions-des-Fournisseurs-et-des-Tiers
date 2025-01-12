@@ -6,15 +6,15 @@ pipeline {
     }
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub') 
-        IMAGE_NAME_SERVER = 'sbika/serverabdelli'  
-        IMAGE_NAME_CLIENT = 'sbika/clientabdelli' 
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub')
+        IMAGE_NAME_SERVER = 'mohamedouni374/mern-server'
+        IMAGE_NAME_CLIENT = 'mohamedouni374/mern-client'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/MohamedSbika/abdellino_store'
+                git branch: 'main', url: 'https://github.com/MohamedOuni1/mern-app'
             }
         }
 
