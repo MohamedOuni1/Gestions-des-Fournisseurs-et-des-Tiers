@@ -5,10 +5,10 @@ version: 1.0.0
 dependencies:
   - name: client
     version: 1.0.0
-    repository: https://github.com/achrafladhari/mern-app/tree/devops/mern-charts/charts/client
+    repository: https://github.com/MohamedOuni1/mern-app/tree/devops/mern-charts/charts/client
   - name: server
     version: 1.0.0
-    repository: https://github.com/achrafladhari/mern-app/tree/devops/mern-charts/charts/server
+    repository: https://github.com/MohamedOuni1/mern-app/tree/devops/mern-charts/charts/server
   - name: mongodb
     version: 1.0.0
-    repository: https://github.com/achrafladhari/mern-app/tree/devops/mern-charts/charts/mongodb
+    repository: https://github.com/MohamedOuni1/mern-app/tree/devops/mern-charts/charts/mongodb
