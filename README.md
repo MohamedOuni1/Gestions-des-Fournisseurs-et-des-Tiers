@@ -64,5 +64,5 @@ Ce projet a permis de mettre en place une architecture robuste et scalable en ut
 ## License
 Copyright (c) 2024 **[Mohamed Ouni](https://www.github.com/mohamedouni1)**
 
-Ce projet est sous licence MIT . Veuillez consulter le fichier **[License](https://github.com/MohamedOuni1/mern-app/blob/main/LICENCE.txt/)** pour plus de détails.
+Ce projet est sous licence MIT . Veuillez consulter le fichier **[License]([https://github.com/MohamedOuni1/mern-app/blob/main/LICENCE.txt/](https://github.com/MohamedOuni1/mern-app?tab=MIT-1-ov-file))** pour plus de détails.
 
