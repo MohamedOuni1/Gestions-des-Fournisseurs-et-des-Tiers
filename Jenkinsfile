@@ -11,12 +11,14 @@ pipeline {
         IMAGE_NAME_CLIENT = 'mohamedouni374/mern-client'
     }
 
-    stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/MohamedOuni1/mern-app'
-            }
+    stage('Checkout') {
+        steps {
+            git branch: 'main',
+                url: 'git@github.com:Mohamedouni1/mern-app.git',
+                credentialsId: 'github_ssh'
         }
+    }
+
 
         stage('Build Server Image') {
             steps {
