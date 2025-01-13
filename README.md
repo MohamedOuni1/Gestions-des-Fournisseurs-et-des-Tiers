@@ -51,6 +51,10 @@ Les étapes incluront :
 
 - **Intégration d'ArgoCD :** Implémentez une stratégie GitOps en intégrant ArgoCD pour automatiser et gérer les déploiements Kubernetes 
 
+#### 3. Monitoring avec Prometheus
+- Installez Prometheus et Grafana dans le namespace monitoring.
+
+- Configurez Prometheus pour collecter les métriques des composants de l'application.
 ## Conclusion
 
 Ce projet a permis de mettre en place une architecture robuste et scalable en utilisant des technologies modernes telles que Docker, Kubernetes, Helm et ArgoCD. Grâce à l'intégration de ces outils, nous avons pu automatiser le processus de déploiement continu (CI/CD), ce qui garantit une gestion efficace des versions, une rapidité de mise à jour des applications et une fiabilité accrue.
@@ -61,3 +65,4 @@ Ce projet a permis de mettre en place une architecture robuste et scalable en ut
 Copyright (c) 2024 **[Mohamed Ouni](https://www.github.com/mohamedouni1)**
 
 Ce projet est sous licence MIT . Veuillez consulter le fichier **[License](https://github.com/MohamedOuni1/mern-app/blob/main/LICENCE.txt/)** pour plus de détails.
+
