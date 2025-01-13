@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-configmap
+data:
+  MONGO_URI: mongodb://mongodb-service:27017/mern-app
+  REACT_APP_API_URL: http://mern-app.francecentral.cloudapp.azure.com/api
+  PORT_SERVER: "9000"

@@ -8,7 +8,6 @@ services:
   server:
     build:
       context: ./server
-
     container_name: server
     ports:
       - "9000:9000"

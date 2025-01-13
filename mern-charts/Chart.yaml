@@ -1,0 +1,14 @@
+apiVersion: v2
+name: mern-app
+description: A Helm chart for the MERN application
+version: 1.0.0
+dependencies:
+  - name: client
+    version: 1.0.0
+    repository: https://github.com/achrafladhari/mern-app/tree/devops/mern-charts/charts/client
+  - name: server
+    version: 1.0.0
+    repository: https://github.com/achrafladhari/mern-app/tree/devops/mern-charts/charts/server
+  - name: mongodb
+    version: 1.0.0
+    repository: https://github.com/achrafladhari/mern-app/tree/devops/mern-charts/charts/mongodb
