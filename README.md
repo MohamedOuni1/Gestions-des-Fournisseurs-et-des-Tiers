@@ -7,7 +7,7 @@ Ce projet a pour objectif de conteneuriser et déployer une application web déj
 - **Docker** pour la conteneurisation
 - **Kubernetes** pour l'orchestration des conteneurs
 - **Helm** pour le déploiement des applications sur Kubernetes
-- **ArgoCD** pour la gestion du déploiement continu basé sur GitOps
+- **ArgoCD** pour la gestion du déploiement 
 - **Prometheus** et **Grafana** pour le monitoring et l’observabilité
 - **Jenkins** pour l'intégration continue et l'automatisation des builds
 
