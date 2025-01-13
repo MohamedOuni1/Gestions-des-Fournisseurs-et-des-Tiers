@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 
@@ -20,28 +19,24 @@ import DetailsTier from './components/DetailsTier';
 import Shop from './components/Shop';
 
 function App() {
-
-
-
-
     return (
         <div className="App">
             <BrowserRouter>
                 <nav className="Nav">
                     <div className="NavLeft">
-                        <NavLink to="/shop" className="NavLink" activeClassName="active">OUNIMED</NavLink>
+                        <NavLink to="/shop" className="NavLink" >OUNIMED</NavLink>
                     </div>
                     <div className="NavRight">
                         <ul className="NavList">
 
                                     <li className="NavItem">
-                                        <NavLink to="/fournisseur" className="NavLink" activeClassName="active">Gestion des fournisseurs</NavLink>
+                                        <NavLink to="/fournisseur" className="NavLink" >Gestion des fournisseurs</NavLink>
                                     </li>
                                     <li className="NavItem">
-                                        <NavLink to="/produit" className="NavLink" activeClassName="active">Gestion des Produits</NavLink>
+                                        <NavLink to="/produit" className="NavLink" >Gestion des Produits</NavLink>
                                     </li>
                                     <li className="NavItem">
-                                        <NavLink to="/tier" className="NavLink" activeClassName="active">Gestion des Livraison</NavLink>
+                                        <NavLink to="/tier" className="NavLink" >Gestion des Livraison</NavLink>
                                     </li>
                                   
                                

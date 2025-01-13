@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faEdit, faEye, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faEdit, faEye } from '@fortawesome/free-solid-svg-icons';
 import './Produit.css';
 
 const Tier = () => {
@@ -11,9 +11,6 @@ const Tier = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const inputRef = useRef();
 
-    useEffect(() => {
-        fetchData();
-    }, []);
 
     const fetchData = useCallback(async () => {
         try {
@@ -34,7 +31,10 @@ const Tier = () => {
             console.error('Failed to delete tier:', error);
         }
     };
-
+  useEffect(() => {
+        fetchData();
+    }, [fetchData]); // Include fetchData in the dependency array
+    
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
     }; 

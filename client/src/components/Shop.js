@@ -9,9 +9,7 @@ const Shop = () => {
     const [societeLivraisonDetails, setSocieteLivraisonDetails] = useState({});
     const [searchTerm, setSearchTerm] = useState('');
 
-    useEffect(() => {
-        fetchData();
-    }, []);
+  
 
     const fetchData = useCallback(async () => {
         try {
@@ -26,6 +24,7 @@ const Shop = () => {
                 };
             });
             setProduitDetails(details);
+           
 
             const tiersResponse = await axios.get('http://localhost:3000/api/tier');
             const tiersDetails = {};
@@ -40,6 +39,10 @@ const Shop = () => {
         }
     }, []);
 
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]); // Include fetchData in the dependency array
+    
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
     };

@@ -12,9 +12,8 @@ const Fournisseur = () => {
     const [produitDetails, setProduitDetails] = useState({});
     const inputRef = useRef();
 
-    useEffect(() => {
-        fetchData();
-    }, []);
+   
+    
 
     const fetchData = useCallback(async () => {
         try {
@@ -24,6 +23,10 @@ const Fournisseur = () => {
             console.error('Something went wrong', error);
         }
     }, []);
+    
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]); // Include fetchData in the dependency array
 
     useEffect(() => {
         const fetchProduitDetails = async () => {

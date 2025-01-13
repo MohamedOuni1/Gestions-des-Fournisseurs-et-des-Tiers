@@ -3,7 +3,7 @@ import './Produit.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faEdit, faEye, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faEdit, faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Produit = () => {
     const [produits, setProduits] = useState([]);
@@ -11,9 +11,7 @@ const Produit = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const inputRef = useRef();
 
-    useEffect(() => {
-        fetchData();
-    }, []);
+
 
     const fetchData = useCallback(async () => {
         try {
@@ -23,7 +21,10 @@ const Produit = () => {
             console.error('Something went wrong', error);
         }
     }, []);
-
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]); // Include fetchData in the dependency array
+    
     const deleteProduit = async (id) => {
         try {
             await axios.delete(`http://localhost:3000/api/produit/${id}`);
